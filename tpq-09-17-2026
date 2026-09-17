@@ -1,0 +1,19 @@
+1.)Do you like the names of the overloaded operators? Are there any that might cause confusion?
+The overloaded operators aren't too bad. The only confusion would be ones that uses an operator before and after the variable and pointers due to it possibly getting
+confused with the multiplcation operator.
+
+2.)Why didn’t we overload operators for less than and greater than?
+Those are more complicated due to the best method would be zig zaging from one point to another and some not even able to be compareable.
+Example: If it was done first x, than y, it would stop if x is greater although it's possible y can be much greater than x.
+
+3.)Would it make sense to add a Point * Point operator? What about int * Point?
+Pointers allocate memory and points to a point. I don't think it would be useful in this class due to needing the actual number over the memory adress since for two
+operators it needs to compare if two points are the same or not.
+
+4.)How much would you have to change to make your Point be in 3 dimensions rather than 2?
+I would add in a new variable called double z. This would cause changes in multipe operators to account for the extra point to create a 3 dimensional Point class 
+rather than a 2 dimensional.
+
+5.) Suppose I wanted to overload the greater than or less than operator for the Point class. What strategy would you use to order two points?
+I would use the alphabetical order approach of first x than y since overloading the greater than and less than operators are a bit difficult. Like mentioned above
+in question 2, some points aren't able to be compared.
